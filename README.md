@@ -5,7 +5,7 @@ A 4-mix vocal separation baseline based on [SpeechBrain](https://github.com/spee
 
 # Environment Setup
 ```bash
-conda create -n sb_sep python=3.10 -y
+conda create -n sb_sep python=3.11 -y
 conda activate sb_sep
 pip install -r requirements.txt
 ```
