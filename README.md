@@ -9,6 +9,13 @@ conda create -n sb_sep python=3.11 -y
 conda activate sb_sep
 pip install -r requirements.txt
 ```
+# Pretrain Model
+
+You can download our pretrained model from Hugging Face:
+
+👉 [swc2/Voice-Separation](https://huggingface.co/swc2/Voice-Separation)
+
+
 # Training
 
 
