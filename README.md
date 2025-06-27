@@ -1,25 +1,42 @@
-# Vocal-Separation-Baseline
+# Universal-Separation-Baseline
 
-A 4-mix vocal separation baseline based on [SpeechBrain](https://github.com/speechbrain/speechbrain) (using SepFormer & Conv-TasNet).
+A 4-mix universal separation baseline based on [SpeechBrain](https://github.com/speechbrain/speechbrain) (using SepFormer & Conv-TasNet).
 
 
 # Environment Setup
-```bash
+```shell
 conda create -n sb_sep python=3.11 -y
 conda activate sb_sep
 pip install -r requirements.txt
 ```
+
+# Data Preparation
+## Data Usage
+To simulate the scenario of competition data, we used three open-source datasets to construct our training and validation sets.
+
+We use [AISHELL-1](https://openslr.org/33/) as the speech dataset, [MUSIC](https://github.com/roudimit/MUSIC_dataset) as the instrument dataset, and [RIRs](https://www.openslr.org/28/) dataset to simulate room reverberation.
+
+All audio data needs to be converted to **pcm_s16le** format and resampled to **16kHz**.
+
+## Data Generation
+Firstly, you need to replace the file paths in the data lists with your data path.
+
+Then, execute the data generation script:
+```shell
+bash data/make_data.sh
+```
+
+# Training
+```shell
+./example.sh
+```
+
 # Pretrain Model
 
 You can download our pretrained model from Hugging Face:
 
 👉 [swc2/Voice-Separation](https://huggingface.co/swc2/Voice-Separation)
 
-
-# Training
-```bash
-./example.sh
-```
 
 # Results
 Below is a summary of the average separation performance for two models in XXX dataset.
@@ -50,3 +67,4 @@ Metrics include Scale-Invariant Signal-to-Noise Ratio (SI-SNR) and Signal-to-Dis
   year={2021},
   pages={31--35}
 }
+```
