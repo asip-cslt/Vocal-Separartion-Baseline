@@ -1,6 +1,6 @@
-# Universal-Separation-Baseline
+# Universal-Sound-Separation-Baseline
 
-A 4-mix universal separation baseline based on [SpeechBrain](https://github.com/speechbrain/speechbrain) (using SepFormer & Conv-TasNet).
+A 4-mix universal sound (speech and instrument) separation baseline based on [SpeechBrain](https://github.com/speechbrain/speechbrain) (using SepFormer & Conv-TasNet).
 
 
 # Environment Setup
