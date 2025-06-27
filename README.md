@@ -17,9 +17,9 @@ You can download our pretrained model from Hugging Face:
 
 
 # Training
-
-
-
+```bash
+./example.sh
+```
 
 # Results
 Below is a summary of the average separation performance for two models in XXX dataset.
@@ -32,7 +32,7 @@ Metrics include Scale-Invariant Signal-to-Noise Ratio (SI-SNR) and Signal-to-Dis
 
 
 # **Citing**
-
+```bibtex
 @misc{luo2019convtasnet,
   title={Conv-TasNet: Surpassing ideal time–frequency magnitude masking for speech separation},
   author={Luo, Yi and Mesgarani, Nima},
