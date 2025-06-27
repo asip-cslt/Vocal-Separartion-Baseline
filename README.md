@@ -27,8 +27,16 @@ bash data/make_data.sh
 ```
 
 # Training
+For Conv-TasNet:
 ```shell
-./example.sh
+cd Conv-Tasnet/separation/
+bash example.sh
+```
+
+For SepFormer:
+```shell
+cd Sepformer/separation/
+bash example.sh
 ```
 
 # Pretrain Model
@@ -38,14 +46,14 @@ You can download our pretrained model from Hugging Face:
 👉 [swc2/Voice-Separation](https://huggingface.co/swc2/Voice-Separation)
 
 
-# Results
+<!-- # Results
 Below is a summary of the average separation performance for two models in XXX dataset.
 Metrics include Scale-Invariant Signal-to-Noise Ratio (SI-SNR) and Signal-to-Distortion Ratio (SDR), along with their respective improvements (i).
 
-| Model     | SI-SNR (dB) | SI-SNRi (dB) | SDR (dB) | SDRi (dB) |
-| --------- | ----------- | ------------ | -------- | --------- |
-| SepFormer |    −20.60   |     5.49     |  −4.60   |    4.62   |
-| TasNet    |    −20.22   |     5.88     |  −4.17   |    5.06   |
+| Model       | SI-SNR (dB) | SI-SNRi (dB) | SDR (dB) | SDRi (dB) |
+| ----------- | ----------- | ------------ | -------- | --------- |
+| SepFormer   |    −20.60   |     5.49     |  −4.60   |    4.62   |
+| Conv-TasNet |    −20.22   |     5.88     |  −4.17   |    5.06   | -->
 
 
 # **Citing**
