@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 ## Data Preparation
 
-We use **AISHELL-1** as the speech dataset, **MUSIC** as the music dataset, and the **RIRs dataset** to simulate room reverberation.  
+We use [AISHELL-1](https://openslr.org/33/) as the speech dataset, [MUSIC](https://github.com/roudimit/MUSIC_dataset) as the music dataset, and the [RIRs](https://www.openslr.org/28/) to simulate room reverberation.  
 All audio files will be converted to `pcm_s16le` format and resampled to **16kHz**.
 
 ### Steps
