@@ -22,7 +22,7 @@ python make_data.py \
   --reverb_json_path "data_lists/reverb.json" \
   --save_path "baseline_train_data" \
   --save_csv "baseline_train_data.csv" \
-  --num 1000
+  --num 30000
 
 # make valid(test) data
 python make_data.py \

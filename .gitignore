@@ -143,7 +143,8 @@ dmypy.json
 
 # Audio folders
 **/audio_cache/
-
+**/baseline_train_data/
+**/baseline_valid_data/
 # Pretrained & models folders
 **/model_checkpoints/
 **/pretrained_model_checkpoints/

@@ -123,8 +123,10 @@ def generate(speech_dict, music_dict, reverb_dict, save_path,save_csv,num):
             continue
         sample_id += 1
         dest = os.path.join(save_path, f"sample-{sample_id:06d}")
+        #dest = os.path.abspath(os.path.join(save_path, f"sample-{sample_id:06d}"))
         os.makedirs(dest, exist_ok=True)
-        mix_path = os.path.join(dest, "mixture.wav")
+        #mix_path = os.path.join(dest, "mixture.wav")
+        mix_path = os.path.abspath(os.path.join(dest, "mixture.wav"))
         sf.write(mix_path, mixture, SAMPLERATE)
 
         row = [
@@ -136,7 +138,7 @@ def generate(speech_dict, music_dict, reverb_dict, save_path,save_csv,num):
         ]
 
         for idx, src in enumerate(sources, start=1):
-            src_path = os.path.join(dest, f"source{idx}.wav")
+            src_path = os.path.abspath(os.path.join(dest, f"source{idx}.wav"))
             sf.write(src_path, src, SAMPLERATE)
             row.extend([
                 src_path,

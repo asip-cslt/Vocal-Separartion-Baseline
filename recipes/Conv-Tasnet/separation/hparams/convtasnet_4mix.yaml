@@ -22,9 +22,9 @@ experiment_name: convtasnet_4-mix
 output_folder: !ref results/<experiment_name>/<seed>
 train_log: !ref <output_folder>/train_log.txt
 save_folder: !ref <output_folder>/save
-train_data: !ref ../data/baseline_train_data
+train_data: !ref ../data/baseline_train_data.csv
 valid_data: !ref ../data/baseline_valid_data.csv
-test_data: !ref ../data//baseline_valid_data.csv
+test_data: !ref ../data/baseline_valid_data.csv
 skip_prep: False
 
 
