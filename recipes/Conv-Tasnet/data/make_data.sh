@@ -1,12 +1,18 @@
 #!/bin/bash
 
-
 # data includes: /yourpath/RIRS_NOISES /yourpath/AISHELL-1 /yourpath/MUSIC
 base_data_dir=/yourpath
 
-./change_basepath.sh \
-      $base_data_dir \
-      data_lists/
+data_lists_dir=data_lists
+
+if [ ! -d "$data_lists_dir" ]; then
+  echo "ERROR: Can't Find $data_lists_dir"
+  exit 1
+fi
+find "$data_lists_dir" -type f -print0 \
+  | xargs -0 sed -i "s|/base_data_dir|$base_data_dir|g"
+
+echo "Change Base Path Done！"
 
 # make train data
 python data/make_data.py \
