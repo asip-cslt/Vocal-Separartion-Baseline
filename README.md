@@ -1,30 +1,49 @@
-# Universal-Sound-Separation-Baseline
+# Universal Sound Separation Baseline
 
-A 4-mix universal sound (speech and instrument) separation baseline based on [SpeechBrain](https://github.com/speechbrain/speechbrain) .
+## Introduction
 
+This repository provides a baseline system for **Task 2** of the **CCF 2025 Challenge for Advanced Audio Technology** ([link](https://ccf-aatc.org.cn/)).  
+The task focuses on separating individual components from mixed audio signals, specifically mixtures containing **0–2 streams of human speech (from different speakers)** and **2–4 music streams** with various instruments.
 
-# Environment Setup
-```shell
+The task is divided into two phases:
+
+1. **Simulation Test**  
+   - The mixed signal is single-channel, created by combining clean speech and music sources with added reverberation.  
+   - SI-SDR is used as the evaluation metric.
+
+2. **Real-world Test**  
+   - Uses two-channel recordings of four sources played simultaneously by four loudspeakers.  
+   - MOS (Mean Opinion Score) is used for evaluation.
+
+**Note:** This baseline system is designed exclusively for the **simulation test**.  
+The code is built on [SpeechBrain](https://speechbrain.github.io/) and uses the **Conv-TasNet** architecture.  
+Training data combines AISHELL-1 (speech) and MUSIC (music) datasets with simulated reverberation to match the test conditions.
+
+---
+
+## Environment Setup
+
+```bash
 conda create -n sb_sep python=3.11 -y
 conda activate sb_sep
 pip install -r requirements.txt
 ```
 
-# Data Preparation
-## Data Usage
-To simulate the scenario of competition data, we used three open-source datasets to construct our training and validation sets.
+## Data Preparation
 
-We use [AISHELL-1](https://openslr.org/33/) as the speech dataset, [MUSIC](https://github.com/roudimit/MUSIC_dataset) as the instrument dataset, and [RIRs](https://www.openslr.org/28/) dataset to simulate room reverberation.
+We use **AISHELL-1** as the speech dataset, **MUSIC** as the music dataset, and the **RIRs dataset** to simulate room reverberation.  
+All audio files will be converted to `pcm_s16le` format and resampled to **16kHz**.
 
-All audio data needs to be converted to **pcm_s16le** format and resampled to **16kHz**.
+### Steps
 
-## Data Generation
-Firstly, you need to replace the file paths in the data lists with your data path.
+1. Download the datasets: **AISHELL-1**, **MUSIC**, and **RIRs**.
+2. Modify the paths in `recipes/Conv-Tasnet/data/data_lists/*.json` to point to the correct data locations.
+3. Modify the paths in `recipes/Conv-Tasnet/data/*.csv` to point to the correct data locations.
+4. Run the following script to generate the training data:
 
-Then, execute the data generation script:
-```shell
-cd recipes/Conv-Tasnet/data
-bash data/make_data.sh
+   ```bash
+   cd recipes/Conv-Tasnet/data
+   bash make_data.sh
 ```
 
 # Training
@@ -42,9 +61,9 @@ python train.py hparams/convtasnet_4mix.yaml --test_only
 ```
 
 
-# Pretrain Model
+# Pretrained Model
 
-You can download our pretrained model from Hugging Face:
+For a quick test, you can download our pretrained model from Hugging Face and place it unde `Conv-Tasnet/separation/results`.
 
 👉 [swc2/Voice-Separation](https://huggingface.co/swc2/Voice-Separation)
 
@@ -82,11 +101,4 @@ Metrics include Scale-Invariant Signal-to-Noise Ratio (SI-SNR) and Signal-to-Dis
   year={2019}
 }
 
-@inproceedings{subakan2021attention,
-  title={Attention is all you need in speech separation},
-  author={Subakan, Cem and Ravanelli, Mirco and Cornell, Samuele and Zanetti, Eleftherios and Collobert, Ronan and Bengio, Yoshua},
-  booktitle={ICASSP 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-  year={2021},
-  pages={31--35}
-}
 ```
