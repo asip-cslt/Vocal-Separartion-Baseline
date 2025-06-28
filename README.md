@@ -1,6 +1,6 @@
 # Universal-Sound-Separation-Baseline
 
-A 4-mix universal sound (speech and instrument) separation baseline based on [SpeechBrain](https://github.com/speechbrain/speechbrain) (using SepFormer & Conv-TasNet).
+A 4-mix universal sound (speech and instrument) separation baseline based on [SpeechBrain](https://github.com/speechbrain/speechbrain) .
 
 
 # Environment Setup
@@ -23,6 +23,7 @@ Firstly, you need to replace the file paths in the data lists with your data pat
 
 Then, execute the data generation script:
 ```shell
+cd recipes/Conv-Tasnet/data
 bash data/make_data.sh
 ```
 
@@ -30,14 +31,16 @@ bash data/make_data.sh
 For Conv-TasNet:
 ```shell
 cd Conv-Tasnet/separation/
-bash example.sh
+python train.py hparams/convtasnet_4mix.yaml
 ```
 
-For SepFormer:
+# Inference
+For Conv-TasNet:
 ```shell
-cd Sepformer/separation/
-bash example.sh
+cd Conv-Tasnet/separation/
+python train.py hparams/convtasnet_4mix.yaml --test_only
 ```
+
 
 # Pretrain Model
 
@@ -52,12 +55,23 @@ Metrics include Scale-Invariant Signal-to-Noise Ratio (SI-SNR) and Signal-to-Dis
 
 | Model       | SI-SNR (dB) | SI-SNRi (dB) | SDR (dB) | SDRi (dB) |
 | ----------- | ----------- | ------------ | -------- | --------- |
-| SepFormer   |    −20.60   |     5.49     |  −4.60   |    4.62   |
-| Conv-TasNet |    −20.22   |     5.88     |  −4.17   |    5.06   | -->
+| SepFormer   |    xxx   |     xxx     |  xxx   |    xxx   |
+| Conv-TasNet |    xxx   |     xxx     |  xxx   |    xxx   | -->
 
 
 # **Citing**
 ```bibtex
+@misc{speechbrain,
+  title={{SpeechBrain}: A General-Purpose Speech Toolkit},
+  author={Mirco Ravanelli and Titouan Parcollet and Peter Plantinga and Aku Rouhe and Samuele Cornell and Loren Lugosch and Cem Subakan and Nauman Dawalatabad and Abdelwahab Heba and Jianyuan Zhong and Ju-Chieh Chou and Sung-Lin Yeh and Szu-Wei Fu and Chien-Feng Liao and Elena Rastorgueva and François Grondin and William Aris and Hwidong Na and Yan Gao and Renato De Mori and Yoshua Bengio},
+  year={2021},
+  eprint={2106.04624},
+  archivePrefix={arXiv},
+  primaryClass={eess.AS},
+  note={arXiv:2106.04624}
+}
+
+
 @misc{luo2019convtasnet,
   title={Conv-TasNet: Surpassing ideal time–frequency magnitude masking for speech separation},
   author={Luo, Yi and Mesgarani, Nima},
