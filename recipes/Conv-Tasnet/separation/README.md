@@ -1,16 +1,16 @@
-# Speech separation 
+# Universal Sound Separation
 
-* This recipe supports train with several source separation models on WSJ0-2Mix, including [Sepformer](https://arxiv.org/abs/2010.13154), [RE-SepFormer](https://arxiv.org/abs/2206.09507), [DPRNN](https://arxiv.org/abs/1910.06379), [ConvTasnet](https://arxiv.org/abs/1809.07454), [DPTNet](https://arxiv.org/abs/2007.13975).
+* This recipe supports train with several source separation models, including [Sepformer](https://arxiv.org/abs/2010.13154), [RE-SepFormer](https://arxiv.org/abs/2206.09507), [DPRNN](https://arxiv.org/abs/1910.06379), [ConvTasnet](https://arxiv.org/abs/1809.07454), [DPTNet](https://arxiv.org/abs/2007.13975).
 
-**Web Demo** Integrated to [Huggingface Spaces](https://huggingface.co/spaces) with [Gradio](https://github.com/gradio-app/gradio). See demo Speech Separation: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/akhaliq/speechbrain-speech-seperation)
+<!-- **Web Demo** Integrated to [Huggingface Spaces](https://huggingface.co/spaces) with [Gradio](https://github.com/gradio-app/gradio). See demo Speech Separation: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/akhaliq/speechbrain-speech-seperation) -->
 
-## Installing Extra Dependencies
+<!-- ## Installing Extra Dependencies
 
 Before proceeding, ensure you have installed the necessary additional dependencies. To do this, simply run the following command in your terminal:
 
 ```
 pip install -r ../extra_requirements.txt
-```
+``` -->
 
 ## How to run
 To run it:
@@ -26,9 +26,9 @@ If you want to run it on the test sets only, you can add the flag `--test_only` 
 ```shell
 python train.py hyperparams/sepformer.yaml --data_folder yourpath/data --test_only
 ```
-# WSJ0-2mix and WSJ0-3mix dataset creation
+<!-- # WSJ0-2mix and WSJ0-3mix dataset creation
 * The best way to create the datasets is using the original matlab script. This script and the associated meta data can be obtained through the following [link](https://www.dropbox.com/s/gg524noqvfm1t7e/create_mixtures_wsj023mix.zip?dl=1).
-* The dataset creation script assumes that the original WSJ0 files in the sphere format are already converted to .wav .
+* The dataset creation script assumes that the original WSJ0 files in the sphere format are already converted to .wav . -->
 
 
 # Dynamic Mixing:

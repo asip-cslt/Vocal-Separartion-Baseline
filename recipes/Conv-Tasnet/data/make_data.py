@@ -45,9 +45,12 @@ def mix_audios_with_snr_and_add_reverb(audios, sr, reverb_path, snr_range=[-3.0,
             noise = reverberate(noise, reverb_path)
 
         noise_energy = np.sum(noise ** 2)
+
         snr_db = random.uniform(snr_range[0], snr_range[1])
         snr_linear = 10 ** (snr_db / 10)
         scale = np.sqrt((target_energy / snr_linear) / (noise_energy + 1e-8))
+
+        
         scaled_noise = noise * scale
         mixed += scaled_noise
         scaled_audios.append(scaled_noise)
