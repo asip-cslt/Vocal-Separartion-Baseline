@@ -41,7 +41,7 @@ All audio files will be converted to `pcm_s16le` format and resampled to **16kHz
 3. Modify the paths in `recipes/Conv-Tasnet/data/*.csv` to point to the correct data locations.
 4. Run the following script to generate the training data:
 
-   ```bash
+```bash
    cd recipes/Conv-Tasnet/data
    bash make_data.sh
 ```
