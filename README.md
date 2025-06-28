@@ -10,14 +10,13 @@ The task is divided into two phases:
 1. **Simulation Test**  
    - The mixed signal is single-channel, created by combining clean speech and music sources with added reverberation.  
    - SI-SDR is used as the evaluation metric.
+   - You can get the test data from here ([link](https://huggingface.co/datasets/swc2/aatc2025sim))
 
 2. **Real-world Test**  
    - Uses two-channel recordings of four sources played simultaneously by four loudspeakers.  
    - MOS (Mean Opinion Score) is used for evaluation.
 
-**Note:** This baseline system is designed exclusively for the **simulation test**.  
-The code is built on [SpeechBrain](https://speechbrain.github.io/) and uses the **Conv-TasNet** architecture.  
-Training data combines AISHELL-1 (speech) and MUSIC (music) datasets with simulated reverberation to match the test conditions.
+This baseline system is designed exclusively for the **simulation test**.  The code is built on [SpeechBrain](https://speechbrain.github.io/) and uses the **Conv-TasNet** architecture.  Training data combines AISHELL-1 (speech) and MUSIC (music) datasets with simulated reverberation to match the test conditions.
 
 ---
 
@@ -47,19 +46,15 @@ All audio files will be converted to `pcm_s16le` format and resampled to **16kHz
 ```
 
 # Training
-For Conv-TasNet:
 ```shell
 cd Conv-Tasnet/separation/
 python train.py hparams/convtasnet_4mix.yaml
 ```
-
 # Inference
-For Conv-TasNet:
 ```shell
 cd Conv-Tasnet/separation/
 python train.py hparams/convtasnet_4mix.yaml --test_only
 ```
-
 
 # Pretrained Model
 
