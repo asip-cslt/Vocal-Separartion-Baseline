@@ -10,7 +10,7 @@ if [ ! -d "$data_lists_dir" ]; then
   exit 1
 fi
 find "$data_lists_dir" -type f -print0 \
-  | xargs -0 sed -i "s|base_data_dir|$base_data_dir|g"
+  | xargs -0 sed -i "s|/work106/wangth/data|$base_data_dir|g"
 
 echo "Change Base Path Done！"
 
