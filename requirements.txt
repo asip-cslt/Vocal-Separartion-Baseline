@@ -19,3 +19,4 @@ pyloudnorm
 speechbrain==1.0.3
 librosa==0.11.0
 fire==0.7.0
+pyloudnorm

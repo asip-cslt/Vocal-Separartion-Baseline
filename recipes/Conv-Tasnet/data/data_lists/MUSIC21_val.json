@@ -1,0 +1,138 @@
+{
+    "accordion": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/accordion/1LnKd5cuqIc.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/accordion/9okuB-rub8c.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/accordion/RRjph7N4hvk.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/accordion/iB17xqmFw3A.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/accordion/q4kscRK91y4.wav"
+    ],
+    "acoustic_guitar": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/acoustic_guitar/-8AgRz5Jdrw.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/acoustic_guitar/-piYS0yc_dI.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/acoustic_guitar/75bCUXEv1hs.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/acoustic_guitar/7_eFPuFPfR4.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/acoustic_guitar/9SZLDvRaHEA.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/acoustic_guitar/AAnID4RS7Vg.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/acoustic_guitar/HGlIImajcRI.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/acoustic_guitar/_IcBMTI8PEQ.wav"
+    ],
+    "bagpipe": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/bagpipe/1nHGmlUj8GM.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/bagpipe/FryEgnBZN8U.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/bagpipe/Q8efUjCGqvo.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/bagpipe/vd1dgdxlA94.wav"
+    ],
+    "banjo": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/banjo/KfGoWjfrDNU.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/banjo/VPKf9yRkKf4.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/banjo/e2aq2A6Bhuc.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/banjo/t6B3JugXgTI.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/banjo/zPzDLRIk6Es.wav"
+    ],
+    "bassoon": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/bassoon/8B9WaDcotLg.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/bassoon/98Menrr741Q.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/bassoon/HI8t07KXWaw.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/bassoon/Te3bHjd0kdc.wav"
+    ],
+    "cello": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/cello/CSKOEhh5nBk.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/cello/FcO9w1mYEEs.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/cello/Mff3pp-Fj2w.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/cello/XI7Fx7rJt4I.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/cello/ZcKsPFZG4_0.wav"
+    ],
+    "clarinet": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/clarinet/IFEP8Z5Qos0.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/clarinet/LPqBkF5NVSQ.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/clarinet/W9ZICrM6V-s.wav"
+    ],
+    "congas": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/congas/4Tn7MBNTFAA.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/congas/FyJTmjsiDuM.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/congas/JoIl89Ybhs0.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/congas/KW2cyLN7bRM.wav"
+    ],
+    "drum": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/drum/0yR5s-CSw4E.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/drum/5yi3rSuvNyI.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/drum/6YkGjuk773U.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/drum/EBWWzSobojo.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/drum/YPiD4WdnUMQ.wav"
+    ],
+    "electric_bass": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/electric_bass/NeayVC7CEvM.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/electric_bass/dVxfGxQq-vc.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/electric_bass/gK3ooFKujO0.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/electric_bass/kx6qqoGft2w.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/electric_bass/wkkzzAjSxDs.wav"
+    ],
+    "erhu": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/erhu/CtrTfd8foxA.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/erhu/EJ-dXyKrSKA.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/erhu/TWrh_c9YRp8.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/erhu/YLTpkQqX_ek.wav"
+    ],
+    "flute": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/flute/8o5ngxZaYYw.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/flute/9L4BvIDqhm8.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/flute/j0U_hqIH_XM.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/flute/jW_AuF6dQYY.wav"
+    ],
+    "guzheng": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/guzheng/8lol9fS2CHU.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/guzheng/8zJgbPSLDLw.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/guzheng/Cml4I28SUHc.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/guzheng/ZPpbacaDz3k.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/guzheng/aYCanSq5Y7E.wav"
+    ],
+    "piano": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/piano/1eqS3rYvDjI.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/piano/6YyYNvPORcs.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/piano/Vs1NPirh2jI.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/piano/Z1_Pkm_SCsU.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/piano/jTnHP1szyyw.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/piano/w-IEfjDTi9c.wav"
+    ],
+    "pipa": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/pipa/IHZSAJkNpps.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/pipa/JS52vNlLVZg.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/pipa/qHOw-XwugYM.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/pipa/qljUWQ1rY3Q.wav"
+    ],
+    "saxophone": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/saxophone/TSEWnnKagqQ.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/saxophone/x5Bzb6R73JQ.wav"
+    ],
+    "trumpet": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/trumpet/ENnSwgLc2B4.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/trumpet/PYjwNew61XQ.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/trumpet/ds0ayqYweAc.wav"
+    ],
+    "tuba": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/tuba/1owUN7YXSzE.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/tuba/JRPtROMynA8.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/tuba/S9ES30JJTZc.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/tuba/V9NILCtoTkc.wav"
+    ],
+    "ukulele": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/ukulele/087sDeYPdjY.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/ukulele/7Lx87M3tD-4.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/ukulele/B-uzLWNKUeo.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/ukulele/CG37e-Q2NeU.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/ukulele/bKKVoO7YIU0.wav"
+    ],
+    "violin": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/violin/9OZHbvWdBbQ.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/violin/CaeZoHNHul0.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/violin/K1LRscO7TSw.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/violin/P3RSXOzak0o.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/violin/ZFuLPm6-kVw.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/violin/h-58UapA8gY.wav"
+    ],
+    "xylophone": [
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/xylophone/2kBkI6f1X_s.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/xylophone/EHKq3-zwphs.wav",
+        "base_data_dir/MUSIC/MUSIC21_solo/audio/xylophone/No-IJw4uWMw.wav"
+    ]
+}
