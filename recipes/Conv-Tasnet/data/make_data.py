@@ -12,7 +12,7 @@ from tqdm import tqdm
 
 
 SAMPLERATE = 16000
-CHUNKDUR = 10.0
+CHUNKDUR = 10
 import pyloudnorm
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
@@ -65,13 +65,13 @@ def mix_audios_with_snr_and_add_reverb(audios, sr, reverb_path, snr_range=[-3.0,
         scaled_audios = [audio * 0.9 / max_value for audio in scaled_audios]
     return mixed, scaled_audios
 
-def generate(speech_dict, music_dict, reverb_dict, save_path, num):
+def generate(speech_dict, music_dict, reverb_dict, save_path,save_csv,num):
     os.makedirs(save_path, exist_ok=True)
     spks = list(speech_dict.keys())
     instrus = list(music_dict.keys())
     rooms = list(reverb_dict.keys())
     # with open(csv_path, "w", newline="", encoding="utf-8") as f:
-    writer = csv.writer(open('baseline_valid_data_300.csv', 'w'))
+    writer = csv.writer(open(save_csv, 'w'))
     writer.writerow([
         "ID","duration","mix_wav","mix_wav_format","mix_wav_opts",
         "s1_wav","s1_wav_format","s1_wav_opts",
