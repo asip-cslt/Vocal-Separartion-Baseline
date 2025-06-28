@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository provides a baseline system for **Task 2** of the ([**CCF 2025 Challenge for Advanced Audio Technology**] (https://ccf-aatc.org.cn/)).  
+This repository provides a baseline system for **Task 2** of the [CCF 2025 Challenge for Advanced Audio Technology](https://ccf-aatc.org.cn/).  
 The task focuses on separating individual components from mixed audio signals, specifically mixtures containing **0–2 streams of human speech (from different speakers)** and **2–4 music streams** with various instruments.
 
 The task is divided into two phases:
@@ -10,7 +10,7 @@ The task is divided into two phases:
 1. **Simulation Test**  
    - The mixed signal is single-channel, created by combining clean speech and music sources with added reverberation.  
    - SI-SDR is used as the evaluation metric.
-   - You can get the test data from ([here](https://huggingface.co/datasets/swc2/aatc2025sim))
+   - You can get the test data from [here](https://huggingface.co/datasets/swc2/aatc2025sim)
 
 2. **Real-world Test**  
    - Uses two-channel recordings of four sources played simultaneously by four loudspeakers.  
