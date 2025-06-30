@@ -53,7 +53,7 @@ python train.py hparams/convtasnet_4mix.yaml
 # Inference
 ```shell
 cd Conv-Tasnet/separation/
-python train.py hparams/convtasnet_4mix.yaml --test_only
+OMP_NUM_THREADS=4 python train.py hparams/convtasnet_4mix.yaml --test_only
 ```
 
 # Pretrained Model
