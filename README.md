@@ -58,7 +58,7 @@ OMP_NUM_THREADS=4 python train.py hparams/convtasnet_4mix.yaml --test_only
 
 # Pretrained Model
 
-For a quick test, you can download our pretrained model from Hugging Face and place it unde `Conv-Tasnet/separation/results`. 
+For a quick test, you can download our pretrained model from Hugging Face and place it under `Conv-Tasnet/separation/results`. 
 
 👉 [swc2/Voice-Separation](https://huggingface.co/swc2/Voice-Separation)
 
