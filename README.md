@@ -58,7 +58,7 @@ OMP_NUM_THREADS=4 python train.py hparams/convtasnet_4mix.yaml --test_only
 
 # Pretrained Model
 
-For a quick test, you can download our pretrained model from Hugging Face and place it under `Conv-Tasnet/separation/results`. 
+For a quick test, you can download our pretrained model from Hugging Face and place it under `Conv-Tasnet/separation/results`. The SI-SDR result on the validation set with the pretrained model is 1.19
 
 👉 [swc2/Voice-Separation](https://huggingface.co/swc2/Voice-Separation)
 
